@@ -12,7 +12,8 @@ namespace DX_tests
 {
     public partial class ProfAdd : Form
     {
-        string[] questions = new string[24]{
+        string[] questions = new string[24]
+        {
             "1. Мне хотелось бы в своей профессиональной деятельности",
             "2. В книге или кинофильме меня больше всего привлекает ",
             "3. Меня больше обрадует Нобелевская премия",
