@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E14EBF0-A46D-4E5E-9337-A34717228D12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DX_tests</RootNamespace>
+    <AssemblyName>DX_tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>опубликовать\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icontexto-inside-orkut_5336.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Doc.cs" />
+    <Compile Include="Emotions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emotions.Designer.cs">
+      <DependentUpon>Emotions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionUtils.cs" />
+    <Compile Include="Main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_form.Designer.cs">
+      <DependentUpon>Main_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntPot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntPot.Designer.cs">
+      <DependentUpon>IntPot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntPot2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntPot2.Designer.cs">
+      <DependentUpon>IntPot2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfAdd.Designer.cs">
+      <DependentUpon>ProfAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SocialInt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialInt.Designer.cs">
+      <DependentUpon>SocialInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trevog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trevog.Designer.cs">
+      <DependentUpon>Trevog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Emotions.resx">
+      <DependentUpon>Emotions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_form.resx">
+      <DependentUpon>Main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntPot.resx">
+      <DependentUpon>IntPot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntPot2.resx">
+      <DependentUpon>IntPot2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfAdd.resx">
+      <DependentUpon>ProfAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SocialInt.resx">
+      <DependentUpon>SocialInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trevog.resx">
+      <DependentUpon>Trevog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Print.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\s1.png" />
+    <Content Include="Icons\s10.png" />
+    <Content Include="Icons\s11.png" />
+    <Content Include="Icons\s12.png" />
+    <Content Include="Icons\s13.png" />
+    <Content Include="Icons\s14.png" />
+    <Content Include="Icons\s15.png" />
+    <Content Include="Icons\s16.png" />
+    <Content Include="Icons\s17.png" />
+    <Content Include="Icons\s18.png" />
+    <Content Include="Icons\s19.png" />
+    <Content Include="Icons\s2.png" />
+    <Content Include="Icons\s20.png" />
+    <Content Include="Icons\s21.png" />
+    <Content Include="Icons\s22.png" />
+    <Content Include="Icons\s23.png" />
+    <Content Include="Icons\s24.png" />
+    <Content Include="Icons\s25.png" />
+    <Content Include="Icons\s26.png" />
+    <Content Include="Icons\s27.png" />
+    <Content Include="Icons\s28.png" />
+    <Content Include="Icons\s29.png" />
+    <Content Include="Icons\s3.png" />
+    <Content Include="Icons\s4.png" />
+    <Content Include="Icons\s5.png" />
+    <Content Include="Icons\s6.png" />
+    <Content Include="Icons\s7.png" />
+    <Content Include="Icons\s8.png" />
+    <Content Include="Icons\s9.png" />
+    <Content Include="Icons\t1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\t2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\t3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\t4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icontexto-inside-orkut_5336.ico" />
+    <None Include="Resources\t11.png" />
+    <None Include="Resources\yes.png" />
+    <None Include="Resources\t1.png" />
+    <None Include="Resources\no.png" />
+    <None Include="Resources\t4.png" />
+    <None Include="Resources\t3.png" />
+    <None Include="Resources\t2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
