@@ -327,37 +327,37 @@ namespace DX_tests
             //II
             if (II < 4) temp_str = Resources.ProfVeryLow;
             if ((II > 3) && (II < 7)) temp_str = Resources.ProfLow;
-            if ((II > 7) && (II < 10)) temp_str = Resources.ProfMedium;
+            if ((II > 6) && (II < 10)) temp_str = Resources.ProfMedium;
             if (II > 9) temp_str = Resources.ProfHigh;
             str += String.Format("{0}\nРезультат: {1} {2}\n{3}\n\n", Resources.II, Convert.ToString(II), temp_str, Resources.II_);
             
             //III
             if (III < 4) temp_str = Resources.ProfVeryLow;
             if ((III > 3) && (III < 7)) temp_str = Resources.ProfLow;
-            if ((III > 6) && (III < 10)) temp_str = Resources.ProfMedium;
+            if ((III > 6) && (III <10)) temp_str = Resources.ProfMedium;
             if (III > 9) temp_str = Resources.ProfHigh;
             str += String.Format("{0}\nРезультат: {1} {2}\n{3}\n\n", Resources.III, Convert.ToString(III), temp_str, Resources.III_);
 
             //IV
             if (IV < 4) temp_str = Resources.ProfVeryLow;
             if ((IV > 3) && (IV < 7)) temp_str = Resources.ProfLow;
-            if ((IV > 6) && (IV < 10)) temp_str = Resources.ProfMedium;
+            if ((IV > 6) && (IV <10)) temp_str = Resources.ProfMedium;
             if (IV > 9) temp_str = Resources.ProfHigh;
             str += String.Format("{0}\nРезультат: {1} {2}\n{3}\n\n", Resources.IV, Convert.ToString(IV), temp_str, Resources.IV_);
 
             //V
             if (V < 4) temp_str = Resources.ProfVeryLow;
             if ((V > 3) && (V < 7)) temp_str = Resources.ProfLow;
-            if ((V > 6) && (V < 10)) temp_str = Resources.ProfMedium;
+            if ((V > 6) && (V <10)) temp_str = Resources.ProfMedium;
             if (V > 9) temp_str = Resources.ProfHigh;
             str += String.Format("{0}\nРезультат: {1} {2}\n{3}\n\n", Resources.V, Convert.ToString(V), temp_str, Resources.V_);
 
             //VI
             if (VI < 4) temp_str = Resources.ProfVeryLow;
             if ((VI > 3) && (VI < 7)) temp_str = Resources.ProfLow;
-            if ((VI > 7) && (VI < 10)) temp_str = Resources.ProfMedium;
+            if ((VI > 6) && (VI < 10))temp_str = Resources.ProfMedium;
             if (VI > 9) temp_str = Resources.ProfHigh;
-            str += String.Format("{0}\nРезультат: {1} {2}\n{3}\n\n", Resources.VI, Convert.ToString(V), temp_str, Resources.VI_);
+            str += String.Format("{0}\nРезультат: {1} {2}\n{3}\n\n", Resources.VI, Convert.ToString(VI), temp_str, Resources.VI_);
 
             MessageBox.Show(Convert.ToString(str));
             Settings.Default.temp_str = str;
