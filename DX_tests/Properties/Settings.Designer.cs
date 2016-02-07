@@ -350,7 +350,7 @@ namespace DX_tests.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("география и геология  ")]
+        [global::System.Configuration.DefaultSettingValueAttribute("география и геология, биология ")]
         public string COUNT_GEO {
             get {
                 return ((string)(this["COUNT_GEO"]));
@@ -386,7 +386,7 @@ namespace DX_tests.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("педагогика и медицина  ")]
+        [global::System.Configuration.DefaultSettingValueAttribute("педагогика и психология ")]
         public string COUNT_MED {
             get {
                 return ((string)(this["COUNT_MED"]));

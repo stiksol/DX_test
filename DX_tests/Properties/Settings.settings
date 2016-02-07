@@ -78,7 +78,7 @@
       <Value Profile="(Default)">механика и конструирование  </Value>
     </Setting>
     <Setting Name="COUNT_GEO" Type="System.String" Scope="User">
-      <Value Profile="(Default)">география и геология  </Value>
+      <Value Profile="(Default)">география и геология, биология </Value>
     </Setting>
     <Setting Name="COUNT_LIT" Type="System.String" Scope="User">
       <Value Profile="(Default)">литература и искусство  </Value>
@@ -87,7 +87,7 @@
       <Value Profile="(Default)">история и политика  </Value>
     </Setting>
     <Setting Name="COUNT_MED" Type="System.String" Scope="User">
-      <Value Profile="(Default)">педагогика и медицина  </Value>
+      <Value Profile="(Default)">педагогика и психология </Value>
     </Setting>
     <Setting Name="COUNT_LANG" Type="System.String" Scope="User">
       <Value Profile="(Default)">иностранные языки  </Value>
