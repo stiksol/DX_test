@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using DX_tests.TypeThinking;
 
 namespace DX_tests
 {
@@ -45,6 +46,13 @@ namespace DX_tests
             ProfAdd PA = new ProfAdd();
             PA.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+           var TT = new TypeThinking.TypeThinking();
+           TT.ShowDialog();
         }
+
+      }
     }
 

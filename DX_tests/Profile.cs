@@ -180,7 +180,7 @@ namespace DX_tests
             str += String.Format("{0}{1}\n\n", "предпринимательство и домоводство ", Convert.ToString(count_Home));
             str += String.Format("{0}{1}\n\n", Settings.Default.COUNT_SPORT, Convert.ToString(count_Sport));
             str += String.Format("{0}{1}\n\n", Settings.Default.COUNT_LANG, Convert.ToString(count_Lang));
-            str += String.Format("{0}{1}\n\n", Settings.Default.COUNT_SPORT, Convert.ToString(count_IT));
+            str += String.Format("{0}{1}\n\n", "информатика ", Convert.ToString(count_IT));
 
             str += String.Format("{0}{1}", Settings.Default.Profile_info, Settings.Default.Profile_info2);
 

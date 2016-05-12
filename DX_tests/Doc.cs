@@ -38,6 +38,7 @@ namespace DX_tests
             }
             catch (Exception e)
             {
+
             //    word.Documents.Close();
                 ExceptionUtils.ShowEx(e);
             }
