@@ -53,6 +53,12 @@ namespace DX_tests
            TT.ShowDialog();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var prBel = new Profile_Bel.Profile_Bel();
+            prBel.ShowDialog();
+        }
+
       }
     }
 
