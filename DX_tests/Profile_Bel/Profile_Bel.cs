@@ -133,15 +133,18 @@ namespace DX_tests.Profile_Bel
             }
 
             if ((index == 4) || (index == 14) || (index == 24) || (index == 34) || (index == 44) || (index == 54))
+            {
                 countFil += 1;
+                if ((index == 44) || (index == 54))
+                {
+                    specLang += 1;
+                }
+            }
 
             if ((index == 5) || (index == 15) || (index == 25) || (index == 35) || (index == 45) || (index == 55))
             {
                 countTech += 1;
-                if ((index == 45) || (index == 55))
-                {
-                    specLang += 1;
-                }
+                
             }
 
             if ((index == 6) || (index == 16) || (index == 26) || (index == 36) || (index == 46) || (index == 56))
@@ -230,7 +233,7 @@ namespace DX_tests.Profile_Bel
                 str.AppendFormat("{0}{1}{2}\n\n", "Интерес к направлению медицина - ", Convert.ToString(specMed), " (макс.3)");
 
             if (specLang != 0)
-                str.AppendFormat("{0}{1}{2}\n\n", "Интерес к направлению иностранный язык - ", Convert.ToString(specLang), " (макс.)");
+                str.AppendFormat("{0}{1}{2}\n\n", "Интерес к направлению иностранный язык - ", Convert.ToString(specLang), " (макс.2)");
 
             if (specPsy != 0)
                 str.AppendFormat("{0}{1}{2}\n\n", "Интерес к направлению психология - ", Convert.ToString(specPsy), " (макс.3)");

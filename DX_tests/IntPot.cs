@@ -414,7 +414,7 @@ namespace DX_tests
             path = AppDomain.CurrentDomain.BaseDirectory;
             path = Path.Combine(path, "Icons");
             path = Path.Combine(path, mainP[index]);
-            Bitmap image1 = new Bitmap(path);
+            var image1 = new Bitmap(path);
             pictureBox1.Image = (image1);
             button8.Enabled = false;
             button7.Visible = true;

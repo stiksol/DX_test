@@ -59,6 +59,13 @@ namespace DX_tests
             prBel.ShowDialog();
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            var chAndProf = new CharacterAndProf();
+            chAndProf.ShowDialog();
+
+        }
+
       }
     }
 

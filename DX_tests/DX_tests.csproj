@@ -93,6 +93,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharacterAndProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterAndProf.Designer.cs">
+      <DependentUpon>CharacterAndProf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doc.cs" />
     <Compile Include="Emotions.cs">
       <SubType>Form</SubType>
@@ -163,6 +169,9 @@
     <Compile Include="TypeThinking\TypeThinking.Designer.cs">
       <DependentUpon>TypeThinking.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CharacterAndProf.resx">
+      <DependentUpon>CharacterAndProf.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Emotions.resx">
       <DependentUpon>Emotions.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +219,9 @@
     <None Include="Print.dot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="PrintProf.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -225,46 +237,104 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Icons\s1.png" />
-    <Content Include="Icons\s10.png" />
-    <Content Include="Icons\s11.png" />
-    <Content Include="Icons\s12.png" />
-    <Content Include="Icons\s13.png" />
-    <Content Include="Icons\s14.png" />
-    <Content Include="Icons\s15.png" />
-    <Content Include="Icons\s16.png" />
-    <Content Include="Icons\s17.png" />
-    <Content Include="Icons\s18.png" />
-    <Content Include="Icons\s19.png" />
-    <Content Include="Icons\s2.png" />
-    <Content Include="Icons\s20.png" />
-    <Content Include="Icons\s21.png" />
-    <Content Include="Icons\s22.png" />
-    <Content Include="Icons\s23.png" />
-    <Content Include="Icons\s24.png" />
-    <Content Include="Icons\s25.png" />
-    <Content Include="Icons\s26.png" />
-    <Content Include="Icons\s27.png" />
-    <Content Include="Icons\s28.png" />
-    <Content Include="Icons\s29.png" />
-    <Content Include="Icons\s3.png" />
-    <Content Include="Icons\s4.png" />
-    <Content Include="Icons\s5.png" />
-    <Content Include="Icons\s6.png" />
-    <Content Include="Icons\s7.png" />
-    <Content Include="Icons\s8.png" />
-    <Content Include="Icons\s9.png" />
+    <Content Include="Icons\s1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s17.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s18.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s19.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s20.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s21.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s22.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s23.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s24.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s25.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s26.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s27.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s28.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\s9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Icons\t1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icons\t2.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icons\t3.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icons\t4.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="icontexto-inside-orkut_5336.ico" />
     <None Include="Resources\t11.png" />

@@ -317,6 +317,7 @@ namespace DX_tests
         {
             string  str = "";
             string temp_str = "";
+            
             //I
             if (I < 4) temp_str = Resources.ProfVeryLow;
             if ((I > 3) && (I < 7)) temp_str = Resources.ProfLow;
