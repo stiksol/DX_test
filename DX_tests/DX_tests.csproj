@@ -169,6 +169,12 @@
     <Compile Include="TypeThinking\TypeThinking.Designer.cs">
       <DependentUpon>TypeThinking.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vanderlik\Vanderlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vanderlik\Vanderlik.Designer.cs">
+      <DependentUpon>Vanderlik.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CharacterAndProf.resx">
       <DependentUpon>CharacterAndProf.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,11 +221,17 @@
     <EmbeddedResource Include="TypeThinking\TypeThinking.resx">
       <DependentUpon>TypeThinking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vanderlik\Vanderlik.resx">
+      <DependentUpon>Vanderlik.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DX_tests_TemporaryKey.pfx" />
     <None Include="Print.dot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="PrintProf.dot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PrintVanderlik.dot">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\app.manifest" />
@@ -237,6 +249,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Icons\n1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\n2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\p0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\p1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\p2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\p4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Icons\s1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -334,6 +364,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icons\t4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\v1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\v2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\v3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\v4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\v5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\v6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="icontexto-inside-orkut_5336.ico" />

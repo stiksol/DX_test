@@ -66,6 +66,13 @@ namespace DX_tests
 
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+           var vander = new Vanderlik.Vanderlik();
+           vander.ShowDialog();
+
+        }
+
       }
     }
 

@@ -7,13 +7,14 @@ using System.Reflection;
 
 namespace DX_tests
 {
-    class Doc
+    internal class Doc
     {
 
         private static string ZAKL = "Test_link";
 
         private static string DOC_NAME = "Print.dot";
         private static string DOC_NAME_PROF = "PrintProf.dot";
+        private static string DOC_NAME_VANDERLIK = "PrintVanderlik.dot";
 
         public static void Act(string str)
         {
@@ -30,7 +31,7 @@ namespace DX_tests
                 try
                 {
                     word.Visible = true;
-                    word.Activate(); 
+                    word.Activate();
                 }
                 catch (Exception e)
                 {
@@ -40,7 +41,7 @@ namespace DX_tests
             catch (Exception e)
             {
 
-            //    word.Documents.Close();
+                //    word.Documents.Close();
                 ExceptionUtils.ShowEx(e);
             }
         }
@@ -55,15 +56,50 @@ namespace DX_tests
             {
                 Microsoft.Office.Interop.Word.Document doc = word.Documents.Add(path);
 
-               doc.Bookmarks["I"].Range.Text = Convert.ToString(result[0]);
-               doc.Bookmarks["II"].Range.Text = Convert.ToString(result[1]);
-               doc.Bookmarks["III"].Range.Text = Convert.ToString(result[2]);
-               doc.Bookmarks["IV"].Range.Text = Convert.ToString(result[3]);
-               doc.Bookmarks["V"].Range.Text = Convert.ToString(result[4]);
-               doc.Bookmarks["VI"].Range.Text = Convert.ToString(result[5]);
-               doc.Bookmarks["VII"].Range.Text = Convert.ToString(result[6]);
-               doc.Bookmarks["VIII"].Range.Text = Convert.ToString(result[7]);
+                doc.Bookmarks["I"].Range.Text = Convert.ToString(result[0]);
+                doc.Bookmarks["II"].Range.Text = Convert.ToString(result[1]);
+                doc.Bookmarks["III"].Range.Text = Convert.ToString(result[2]);
+                doc.Bookmarks["IV"].Range.Text = Convert.ToString(result[3]);
+                doc.Bookmarks["V"].Range.Text = Convert.ToString(result[4]);
+                doc.Bookmarks["VI"].Range.Text = Convert.ToString(result[5]);
+                doc.Bookmarks["VII"].Range.Text = Convert.ToString(result[6]);
+                doc.Bookmarks["VIII"].Range.Text = Convert.ToString(result[7]);
 
+                try
+                {
+                    word.Visible = true;
+                    word.Activate();
+                }
+                catch (Exception e)
+                {
+                    ExceptionUtils.ShowEx(e);
+                }
+            }
+            catch (Exception e)
+            {
+
+                //    word.Documents.Close();
+                ExceptionUtils.ShowEx(e);
+            }
+        }
+
+        public static void Vanderlik(string[] result)
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            path = Path.Combine(path, DOC_NAME_VANDERLIK);
+
+            Microsoft.Office.Interop.Word.Application word = new Microsoft.Office.Interop.Word.Application();
+            try
+            {
+                Microsoft.Office.Interop.Word.Document doc = word.Documents.Add(path);
+
+                doc.Bookmarks["eruditionZakl"].Range.Text = Convert.ToString(result[0]);
+                doc.Bookmarks["speechDevelopmentZakl"].Range.Text = Convert.ToString(result[1]);
+                doc.Bookmarks["attentionZakl"].Range.Text = Convert.ToString(result[2]);
+                doc.Bookmarks["mathematicalAbilittyZakl"].Range.Text = Convert.ToString(result[3]);
+                doc.Bookmarks["logicZakl"].Range.Text = Convert.ToString(result[4]);
+                doc.Bookmarks["spatialRepresentationZakl"].Range.Text = Convert.ToString(result[5]);
+                
                 try
                 {
                     word.Visible = true;
